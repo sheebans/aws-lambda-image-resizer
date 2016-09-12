@@ -15,5 +15,6 @@ Purpose of this lambda function is  to resize the images automatically and store
 
 ### Architecture Diagram
 
+![image resize](https://cloud.githubusercontent.com/assets/4478382/18433895/9f0d70a2-7907-11e6-98a2-ccbc94eb56ef.png)
 
  
