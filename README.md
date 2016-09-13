@@ -8,13 +8,45 @@ Purpose of this lambda function is  to resize the images automatically and store
  
  ```json
  {
-  "resizes": [{ "width" : 200, "height" : 100}, { "width" : 300, "height" : 150}, { "width" : 400, "height" : 200}],
-  "target_bucket": "imagemagick-resize.bambeeq.com"
+    "resizes": [{
+        "width": 200,
+        "height": 100
+    }, {
+        "width": 300,
+        "height": 150
+    }, {
+        "width": 400,
+        "height": 200
+    }],
+    "target_bucket": "imagemagick-resize.bambeeq.com"
 }
 ```
 
 ### Architecture Diagram
 
 ![image resize](https://cloud.githubusercontent.com/assets/4478382/18433895/9f0d70a2-7907-11e6-98a2-ccbc94eb56ef.png)
+
+### How to deploy  ? 
+
+#### Method one 
+ 
+  - Clone and build this Lambda application and make zip package. To generate zip file command : `make lambda`
+  - Deploy `aws-lambda-image-resizer.zip` from AWS Management Console.
+ 
+#### Method two 
+ 
+  - Clone and build this Lambda application.
+  - Create lambda function with name of `imageResize` from AWS management Console. Use `make uploadToaws` it will automatically upload to  aws.
+ 
+#### Method Three
+
+  - Clone and build this Lambda application and make zip package. To generate zip file command : `make lambda`.
+  - Create lambda function from AWS Management Console.
+  - Depoly lambda zip package via command  : 
+    `aws lambda update-function-code --function-name [Replace Lambda function name] --zip-file fileb://aws-lambda-image-resizer.zip` 
+
+
+ 
+
 
  
