@@ -47,6 +47,6 @@ Purpose of this lambda function is  to resize the images automatically and store
 
 
  ## Donation
-If this project help you reduce time to develop, you can give me a cup of tea :) 
+If this project help you reduce time to develop, you can donate me :)
 
 [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.me/sheebans/5usd)
